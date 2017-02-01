@@ -1,0 +1,302 @@
+@font-face {
+  font-family: 'Dancing Script';
+  src: url("../fonts/Dancing_Script/DancingScript-Regular.ttf"), url("../fonts/Dancing_Script/DancingScript-Bold.ttf");
+}
+
+
+body{
+  font-family:"Dancing Script",cursive;;
+  width: 90%;
+  margin-left: 5%;
+  background-color: black;
+}
+header{
+  background-color: #5b7989;
+  width: 100%;
+  height: auto;
+  margin:0 auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px 10px 0px 0px;
+-moz-border-radius: 10px 10px 0px 0px;
+-webkit-border-radius: 10px 10px 0px 0px;
+border: 0px solid #000000;
+
+}
+
+header h1
+{
+  font-size: 1.5em;
+  text-align: left;
+  color:white;
+  text-shadow:2px 2px #02010a ;
+}
+header h2{
+  font-size: 1em;
+  text-align: right;
+  text-decoration: none;
+}
+.menu{
+  text-decoration: none;
+  color:black;
+
+}
+#contenido{
+  margin:0 auto;
+  width: 100%;
+
+}
+.imagencentral {
+  width: 100%;
+  float: none;
+  background-color: #82c3a6;
+  margin:0 auto;
+  border: 0px;
+
+}
+
+#tortuga img {
+  width: 60%;
+  display:block;
+  margin:auto;
+}
+#contenedor {
+	margin: 0 auto;
+  width: 100%;
+	display: flex;
+	flex-direction: : row;
+}
+
+.imgsecizq {
+  margin: 0 auto;
+  border: 1px;
+  color: black;
+  background-color: #d5c75f;
+	width: 100%;
+  flex:1
+  order:1;
+}
+#mar img{
+  width: 60%;
+  display:block;
+  margin:auto;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(130,195,166,0.74);
+-moz-box-shadow: 10px 10px 5px 0px rgba(130,195,166,0.74);
+box-shadow: 10px 10px 5px 0px rgba(130,195,166,0.74);
+  transition-property: rotate;
+  transition-duration: 2s;
+
+}
+#mar img:hover {
+  -ms-transform: rotate(10deg); /* IE 9 */
+	-webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
+	transform: rotate(10deg);
+
+   }
+
+.imgsecder {
+  margin: 0 auto;
+  border: 1px;
+  color: #333;
+  background-color: #d5c75f;
+	width: 100%;
+  flex:1
+  order:2;
+}
+#cueva img{
+  width: 70%;
+  display:block;
+  margin:auto;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(130,195,166,0.74);
+-moz-box-shadow: 10px 10px 5px 0px rgba(130,195,166,0.74);
+box-shadow: 10px 10px 5px 0px rgba(130,195,166,0.74);
+transition-property: translate;
+transition-duration: 2s;
+
+}
+#cueva img:hover {
+  -ms-transform: translate(20px,-5px); /* IE 9 */
+	-webkit-transform: translate(20px,-5px); /* Chrome, Safari, Opera */
+	transform: translate(20px,-5px);
+
+   }
+
+   footer {
+     background: #C6d5c5;
+     border-radius: 0 0 10px 10px;
+     color: black;
+     width: 100%;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-justify-content: space-around;
+         -ms-flex-pack: distribute;
+             justify-content: space-around;
+   }
+   footer ul {
+     list-style: none;
+   }
+
+   footer p {
+     margin-left: 10%;
+     text-align: left;
+   }
+
+   footer section {
+     margin: 2% 0 2% 2%;
+     -webkit-flex-grow: 1;
+         -ms-flex-positive: 1;
+             flex-grow: 1;
+   }
+
+   footer section:last-child {
+     margin-right: 2%;
+   }
+
+   footer section p, footer section li {
+     margin: 4% 2%;
+   }
+
+   footer section li {
+     text-align: left;
+   }
+
+   footer section li a {
+     margin-left: 3%;
+   }
+
+   .fa-facebook {
+     color: white;
+     background: #3b5998;
+     font-weight: bold;
+   }
+
+   .fa-twitter {
+     color: #1da1f2;
+     background: white;
+   }
+
+   .fa-instagram {
+     color: #DF71D5;
+     background: white;
+   }
+#paisajes{
+  margin: 0 auto;
+  width: 100%;
+	display: flex;
+	flex-direction: : row;
+  background-color: #d5c75f
+
+}
+#paisajes div{
+  margin: 0 auto;
+
+}
+
+.imagenes{
+  -webkit-flex-flow: column;
+          flex-flow: column;
+          width: 33%;
+          margin: 0 auto;
+
+}
+.imagenes img{
+  width: 70%;
+  margin: 0 auto;
+  min-width: 100px;
+}
+#paisaje1 img{
+
+  margin:0 auto;
+  transition: 2s -webkit-filter linear;
+  -webkit-filter: blur(10px);
+  filter: blur(10px); /* IE 9 */
+
+
+}
+
+#paisaje2, #paisaje3,#paisaje6 img{
+  -webkit-filter : grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+   -o-filter: grayscale(100%);
+   filter:grayscale(100%);
+
+}
+#paisaje5 img{
+  filter:sepia(90%);
+}
+
+@media all and (max-width: 900px) {
+
+ #contenedor {
+  -webkit-flex-flow: column;
+          flex-flow: column;
+          width: 100%;
+ }
+ #paisajes {
+  -webkit-flex-flow: column;
+          flex-flow: column;
+          width: 100%;
+          margin:0 auto;
+
+ }
+ .imagenes{
+   -webkit-flex-flow: column;
+           flex-flow: column;
+           width: 100%;
+            min-width: 100px;
+            margin: 0 auto;
+
+
+ }
+ .imagenes img{
+   margin: 0 auto;
+   min-width: 100px;
+ }
+ footer {
+   text-align: center;
+   width: 100%;
+   height: 100%;
+   margin: 0 auto;
+   -webkit-flex-flow: column;
+           flex-flow: column;
+
+ }
+ 
+ header h1
+ {
+   font-size: 1.2em;
+   text-align: center;
+
+ }
+ header h2{
+   font-size: 1em;
+   text-align: center;
+   text-decoration: none;
+ }
+ .imagencentral {
+   width: 100%;
+   float: none;
+
+}
+#tortuga img{
+  width: 100%;
+}
+#mar img{
+  width: 100%;
+
+
+}
+
+#cueva img{
+  width: 100%;
+
+}
